@@ -1094,6 +1094,12 @@ main {
     padding-top: 76px !important;
   }
 
+  /* Prevent the content from re-centering and jumping when the virtual keyboard shrinks the viewport */
+  .learning-container {
+    justify-content: flex-start !important;
+    padding-top: 60px !important;
+  }
+
   /* Rip the dark mode toggle / streak container out of main flow and pin it top-right */
   .nav-top {
     position: fixed !important;
