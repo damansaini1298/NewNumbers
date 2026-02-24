@@ -172,20 +172,36 @@ main {
   padding: 16px !important;
 }
 
-.custom-intro .introjs-arrow.top {
+.custom-intro .introjs-arrow.top,
+.custom-intro .introjs-arrow.top-right,
+.custom-intro .introjs-arrow.top-middle {
   border-bottom-color: var(--lm-bg-content) !important;
 }
 
-.custom-intro .introjs-arrow.bottom {
+.custom-intro .introjs-arrow.bottom,
+.custom-intro .introjs-arrow.bottom-right,
+.custom-intro .introjs-arrow.bottom-middle {
   border-top-color: var(--lm-bg-content) !important;
 }
 
-.custom-intro .introjs-arrow.left {
+.custom-intro .introjs-arrow.left,
+.custom-intro .introjs-arrow.left-bottom {
   border-right-color: var(--lm-bg-content) !important;
 }
 
-.custom-intro .introjs-arrow.right {
+.custom-intro .introjs-arrow.right,
+.custom-intro .introjs-arrow.right-bottom {
   border-left-color: var(--lm-bg-content) !important;
+}
+
+/* Make the arrows stand out beautifully against the dark background */
+.custom-intro .introjs-arrow {
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.4)) !important;
+}
+
+/* Reposition the left arrow (used for Step 1 on the menu) to vertically hit the center of the icon */
+.custom-intro .introjs-arrow.left {
+  top: 30px !important;
 }
 
 .custom-intro .introjs-tooltiptext {
