@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="eng-us">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <title>Learn Numbers</title>
+  <link rel="stylesheet" href="style.css?v=18">
+
+  <!-- Boxiocns CDN Link -->
+  <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+
+  <!-- Intro.js for First-Time User Tutorial -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intro.js/7.2.0/introjs.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/intro.js/7.2.0/intro.min.js"></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://unpkg.com/boxicons@2.1.1/dist/boxicons.js"></script>
+</head>
+
+<body>
+
+  <div class="sidebar close">
+    <div class="logo-details" data-intro="Click here to change the language you are learning." data-step="1">
+      <i class="bx bx-menu" style="cursor: pointer;"></i>
+      <span class="logo_name">Learn Numbers</span>
+    </div>
+
+    <ul class="nav-links">
+      <li onclick="changeLang('ar')">
+        <div class="iocn-link">
+          <a href="#">
+            <i> <img src="icons/arab.png" style="width: 25px;"></img></i>
+            <span class="link_name">Arabic</span>
+          </a>
+        </div>
+        <ul class="sub-menu">
+          <li><a class="link_name" href="#">Arabic</a></li>
+        </ul>
+      </li>
+
+      <li onclick="changeLang('bn')">
+        <div class="iocn-link">
+          <a href="#">
+            <i> <img src="icons/bengal.png" style="width: 25px;"></img></i>
+            <span class="link_name">Bengali</span>
+          </a>
+        </div>
+        <ul class="sub-menu">
+          <li><a class="link_name" href="#">Bengali</a></li>
+        </ul>
+      </li>
+
+      <li onclick="changeLang('zh')">
+        <div class="iocn-link">
+          <a href="#">
+            <i> <img src="icons/china.png" style="width: 25px;"></img></i>
+            <span class="link_name">Chinese</span>
+          </a>
+        </div>
+        <ul class="sub-menu">
+          <li><a class="link_name" href="#">Chinese</a></li>
+        </ul>
+      </li>
+
+      <li onclick="changeLang('en')">
+        <div class="iocn-link">
+          <a href="#">
+            <i onclick="changeLang('en')"> <img src="icons/en.png" style="width: 25px;"></img></i>
+            <span class="link_name" onclick="changeLang('en')">English</span>
+          </a>
+        </div>
+        <ul class="sub-menu">
+          <li><a class="link_name" href="#">English</a></li>
+        </ul>
+      </li>
+
+      <li onclick="changeLang('fr')">
+        <div class="iocn-link">
+          <a href="#">
+            <i> <img src="icons/france.png" style="width: 25px;"></img></i>
+            <span class="link_name">French</span>
+          </a>
+        </div>
+        <ul class="sub-menu">
+          <li><a class="link_name" href="#">French</a></li>
+        </ul>
+      </li>
+
+      <li onclick="changeLang('de')">
+        <a href="#">
+          <i> <img src="icons/germany.png" style="width: 25px;"></img></i>
+          <span class="link_name">German</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="#">German</a></li>
+        </ul>
+      </li>
+
+      <li onclick="changeLang('hi')">
+        <a href="#">
+          <i> <img src="icons/india.png" style="width: 25px;"></img></i>
+          <span class="link_name">Hindi</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name">Hindi</a></li>
+        </ul>
+      </li>
+
+      <li onclick="changeLang('it')">
+        <a href="#">
+          <i> <img src="icons/italy.png" style="width: 25px;"></img></i>
+          <span class="link_name">Italian</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="#">Italian</a></li>
+        </ul>
+      </li>
+
+      <li onclick="changeLang('ja')">
+        <a href="#">
+          <i> <img src="icons/japan.png" style="width: 25px;"></img></i>
+          <span class="link_name">Japanese</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name">Japanese</a></li>
+        </ul>
+      </li>
+
+      <li onclick="changeLang('pt')">
+        <a href="#">
+          <i> <img src="icons/portugal.png" style="width: 25px;"></img></i>
+          <span class="link_name">Portuguese</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name">Portuguese</a></li>
+        </ul>
+      </li>
+
+      <li onclick="changeLang('pa')">
+        <a href="#">
+          <i> <img src="icons/punjab.png" style="width: 30px;"></img></i>
+          <span class="link_name">Punjabi</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name">Punjabi</a></li>
+        </ul>
+      </li>
+
+      <li onclick="changeLang('ru')">
+        <a href="#">
+          <i> <img src="icons/russia.png" style="width: 25px;"></img></i>
+          <span class="link_name">Russian</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="#">Russian</a></li>
+        </ul>
+      </li>
+
+      <li onclick="changeLang('es')">
+        <a href="#">
+          <i> <img src="icons/spain.png" style="width: 25px;"></img></i>
+          <span class="link_name">Spainish</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="#">Spainish</a></li>
+        </ul>
+      </li>
+
+      <!-- <li>
+        <a href="#">
+          <i class='bx bx-cog'></i>
+          <span class="link_name">Setting</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="#">Setting</a></li>
+        </ul>
+      </li> -->
+
+      <li onclick="startTutorial()">
+        <a href="#">
+          <i class='bx bx-help-circle'></i>
+          <span class="link_name">Tutorial</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="#">Tutorial</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+
+  <main>
+    <div class="nav-top">
+      <div class="streak-counter" data-intro="Watch your streak grow as you get consecutive answers right!"
+        data-step="2">
+        <i id="flame" class="bx bxs-hot bx-sm"></i>
+        <span id="numbersCorrect">
+          <script>
+            document.write(localStorage.getItem('numbersCorrectCount') || 0);
+          </script>
+        </span>
+      </div>
+
+      <div id="btn-mode" data-intro="Toggle between light and dark mode to suit your environment." data-step="3">
+        <i class='bx bx-sun' id="icon-sun" style="font-size: 1.5rem; color: var(--lm-text-alt); margin-right: 8px;"></i>
+        <label class="theme-switch">
+          <input type="checkbox" id="theme-toggle" checked>
+          <span class="slider round"></span>
+        </label>
+        <i class='bx bx-moon' id="icon-moon"
+          style="font-size: 1.5rem; color: var(--lm-text-alt); margin-left: 8px;"></i>
+      </div>
+    </div>
+
+    <div class="learning-container">
+      <div class="learning-card" id="profile-container">
+
+        <div class="audio-prompt tooltip"
+          data-intro="Click here to hear the number spoken aloud in your chosen language." data-step="4">
+          <i id="infoCircle" class="bx bx-volume-full volume-icon" onclick="play()" style="cursor: pointer;"></i>
+          <!-- <span class="tooltiptext">Click to listen to the number again.</span> -->
+        </div>
+
+        <div class="input-area card-body" id="card-body">
+          <input type="text" id="firstNum" name="firstNum" onclick="play()" onfocus="this.value=''" value=""
+            inputmode="numeric" required placeholder="Type what you hear" autocomplete="off"
+            data-intro="Type the number you hear in digit form. You can also click this box at any time to replay the audio."
+            data-step="5">
+          <p id="inputInfo"></p>
+        </div>
+
+        <div id="hint" class="hint-text">
+          <p id="answer"></p>
+        </div>
+
+        <div class="action-buttons" data-intro="Reveal the answer if you're stuck, or Continue to the next challenge!"
+          data-step="6">
+          <button class="btn-ghost" id="showAnswer" onclick="showAnswer()">Reveal</button>
+          <button class="btn-primary" id="reveal" onclick="continueButton()">Continue</button>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <div id="snackbar"></div>
+
+  <script>
+    var x = document.getElementById("firstNum");
+    x.addEventListener("keydown", function (e) {
+      if (e.key === "Enter") {
+        continueButton();
+      }
+    });
+
+    let arrow = document.querySelectorAll(".arrow");
+    for (var i = 0; i < arrow.length; i++) {
+      arrow[i].addEventListener("click", (e) => {
+        let arrowParent = e.target.parentElement.parentElement;
+        arrowParent.classList.toggle("showMenu");
+      });
+    }
+    let sidebar = document.querySelector(".sidebar");
+    let sidebarBtn = document.querySelector(".bx-menu");
+    sidebarBtn.addEventListener("click", () => {
+      sidebar.classList.toggle("close");
+    });
+
+    if (localStorage.getItem('lang') === null) {
+      sidebar.classList.toggle("close");
+    }
+  </script>
+
+  <script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
+  <script src="script.js?v=12"></script>
+  <script src="js/js.js?v=12"></script>
+
+</body>
+
+</html>
