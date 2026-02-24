@@ -74,6 +74,7 @@ function startTutorial() {
     introJs().setOptions({
         showProgress: false,
         showBullets: false,
+        scrollToElement: false,
         tooltipClass: 'custom-intro',
         nextLabel: 'Next',
         prevLabel: 'Back',
